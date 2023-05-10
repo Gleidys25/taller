@@ -1,0 +1,862 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>760</width>
+    <height>487</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout" stretch="1,8">
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item>
+     <widget class="QFrame" name="frame_superior">
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(162, 117, 227);</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <item>
+        <widget class="QPushButton" name="pushButton">
+         <property name="minimumSize">
+          <size>
+           <width>200</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>../../../../menu.png</normaloff>../../../../menu.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>38</width>
+           <height>38</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>339</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QPushButton" name="bt_minimizar">
+         <property name="minimumSize">
+          <size>
+           <width>40</width>
+           <height>40</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QFrame {
+background-color: rgb(92, 70, 156);
+}
+
+QPushButton{
+background-color:#9AEBED;
+border-radius: 20px;
+}
+QPushButton:hover {
+background-color: rgb(255, 255, 255);
+border-radius: 20px;
+}</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>../../../../minimizar-signo.png</normaloff>../../../../minimizar-signo.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>38</width>
+           <height>38</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="bt_restaurar">
+         <property name="minimumSize">
+          <size>
+           <width>40</width>
+           <height>40</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QFrame {
+background-color: rgb(92, 70, 156);
+}
+
+QPushButton{
+background-color:#9AEBED;
+border-radius: 20px;
+}
+QPushButton:hover {
+background-color: rgb(255, 255, 255);
+border-radius: 20px;
+}</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>../../../../minimizar.png</normaloff>../../../../minimizar.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>38</width>
+           <height>38</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="bt_maximizar">
+         <property name="minimumSize">
+          <size>
+           <width>40</width>
+           <height>40</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QFrame {
+background-color: rgb(92, 70, 156);
+}
+
+QPushButton{
+background-color:#9AEBED;
+border-radius: 20px;
+}
+QPushButton:hover {
+background-color: rgb(255, 255, 255);
+border-radius: 20px;
+}</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>../../../../maximizar.png</normaloff>../../../../maximizar.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>38</width>
+           <height>38</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="bt_cerrar">
+         <property name="minimumSize">
+          <size>
+           <width>40</width>
+           <height>40</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QFrame {
+background-color: rgb(92, 70, 156);
+}
+
+QPushButton{
+background-color:#9AEBED;
+border-radius: 20px;
+}
+QPushButton:hover {
+background-color: rgb(255, 255, 255);
+border-radius: 20px;
+}</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>../../../../cerrar (1).png</normaloff>../../../../cerrar (1).png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>38</width>
+           <height>38</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QFrame" name="frame_contenido">
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(162, 117, 227);</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_2">
+       <item>
+        <widget class="QFrame" name="frame_control">
+         <property name="minimumSize">
+          <size>
+           <width>200</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>0</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QFrame{
+background-color: rgb(250, 134, 190);
+}
+
+QPushButton{
+background-color:#9A208C;
+border-top-left-radius: 20px;
+border-bottom-left-radius: 20px;
+color: rgb(255, 255, 255);
+font: 77 10pt &quot;Arial Black&quot;;
+}
+
+QPushButton:hover{
+background-color: rgb(154, 235, 237);
+border-top-left-radius: 20px;
+border-bottom-left-radius: 20px;
+color: rgb(0, 0, 0);
+font: 77 10pt &quot;Arial Black&quot;;
+}</string>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_2">
+          <item>
+           <widget class="QPushButton" name="bt_cargar">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="text">
+             <string> CARGAR</string>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>../../../../cargando.png</normaloff>../../../../cargando.png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>35</width>
+              <height>35</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="bt_entrenar">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="text">
+             <string> ENTRENAR</string>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>../../../../guantes-con-cable (1).png</normaloff>../../../../guantes-con-cable (1).png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>35</width>
+              <height>35</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="bt_simular">
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="text">
+             <string> SIMULAR</string>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>../../../../simulador.png</normaloff>../../../../simulador.png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>35</width>
+              <height>35</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QFrame" name="frame_pagina">
+         <property name="styleSheet">
+          <string notr="true">QFrame{
+background color: rgb(61, 61, 61);
+}
+QLabel{
+font: 87 9pt &quot;Arial Black&quot;;
+background-color: #000000ff;
+color: rgb(255, 255, 255);
+border:Opx solid #14C8DC;
+
+}
+QLineEdit{
+border:Opx;
+color: rgb(255, 255, 255);
+border-bottom: 2px solid rgb(61, 61, 61);
+font: 75 12pt &quot;Times New Roman&quot;;
+}
+
+QPushButton{
+background color: rgb(61, 61, 61);
+border-radius: 15px;
+color: rgb (255, 255, 255); font: 77 10pt &quot;Arial Black&quot;;
+}</string>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_3">
+          <property name="spacing">
+           <number>0</number>
+          </property>
+          <property name="leftMargin">
+           <number>1</number>
+          </property>
+          <property name="topMargin">
+           <number>1</number>
+          </property>
+          <property name="rightMargin">
+           <number>1</number>
+          </property>
+          <property name="bottomMargin">
+           <number>1</number>
+          </property>
+          <item>
+           <widget class="QStackedWidget" name="stackedWidget">
+            <property name="currentIndex">
+             <number>1</number>
+            </property>
+            <widget class="QWidget" name="page_cargar">
+             <widget class="QPushButton" name="button_cargar">
+              <property name="geometry">
+               <rect>
+                <x>310</x>
+                <y>310</y>
+                <width>181</width>
+                <height>41</height>
+               </rect>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QFrame {
+background-color: rgb(92, 70, 156);
+}
+
+QPushButton{
+background-color:#9AEBED;
+border-radius: 20px;
+}
+QPushButton:hover {
+background-color: rgb(255, 255, 255);
+border-radius: 20px;
+}</string>
+              </property>
+              <property name="text">
+               <string>CARGAR BANCO DE DATOS</string>
+              </property>
+              <property name="icon">
+               <iconset>
+                <normaloff>../../../../../Pictures/Saved Pictures/carga-en-la-nube (1).png</normaloff>../../../../../Pictures/Saved Pictures/carga-en-la-nube (1).png</iconset>
+              </property>
+              <property name="iconSize">
+               <size>
+                <width>32</width>
+                <height>32</height>
+               </size>
+              </property>
+             </widget>
+             <widget class="QComboBox" name="combo_accion">
+              <property name="geometry">
+               <rect>
+                <x>310</x>
+                <y>160</y>
+                <width>121</width>
+                <height>22</height>
+               </rect>
+              </property>
+              <item>
+               <property name="text">
+                <string>PERCEPTRON</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>ADALINE</string>
+               </property>
+              </item>
+             </widget>
+             <widget class="QLabel" name="label">
+              <property name="geometry">
+               <rect>
+                <x>10</x>
+                <y>70</y>
+                <width>91</width>
+                <height>16</height>
+               </rect>
+              </property>
+              <property name="text">
+               <string>ENTRADA</string>
+              </property>
+             </widget>
+             <widget class="QLabel" name="label_2">
+              <property name="geometry">
+               <rect>
+                <x>10</x>
+                <y>100</y>
+                <width>71</width>
+                <height>16</height>
+               </rect>
+              </property>
+              <property name="text">
+               <string>SALIDA</string>
+              </property>
+             </widget>
+             <widget class="QLabel" name="label_3">
+              <property name="geometry">
+               <rect>
+                <x>10</x>
+                <y>130</y>
+                <width>101</width>
+                <height>16</height>
+               </rect>
+              </property>
+              <property name="text">
+               <string>PATRONES</string>
+              </property>
+             </widget>
+             <widget class="QLabel" name="label_4">
+              <property name="geometry">
+               <rect>
+                <x>20</x>
+                <y>200</y>
+                <width>171</width>
+                <height>16</height>
+               </rect>
+              </property>
+              <property name="text">
+               <string>N°ITERACIONES</string>
+              </property>
+             </widget>
+             <widget class="QLabel" name="label_5">
+              <property name="geometry">
+               <rect>
+                <x>20</x>
+                <y>230</y>
+                <width>111</width>
+                <height>16</height>
+               </rect>
+              </property>
+              <property name="text">
+               <string>ERROR MAXIMO</string>
+              </property>
+             </widget>
+             <widget class="QLabel" name="label_6">
+              <property name="geometry">
+               <rect>
+                <x>10</x>
+                <y>260</y>
+                <width>211</width>
+                <height>16</height>
+               </rect>
+              </property>
+              <property name="text">
+               <string>RATA APRENDIZAJE</string>
+              </property>
+             </widget>
+             <widget class="QLineEdit" name="caja_entrada">
+              <property name="geometry">
+               <rect>
+                <x>110</x>
+                <y>60</y>
+                <width>113</width>
+                <height>20</height>
+               </rect>
+              </property>
+             </widget>
+             <widget class="QLineEdit" name="caja_salida">
+              <property name="geometry">
+               <rect>
+                <x>110</x>
+                <y>90</y>
+                <width>113</width>
+                <height>20</height>
+               </rect>
+              </property>
+             </widget>
+             <widget class="QLineEdit" name="caja_patron">
+              <property name="geometry">
+               <rect>
+                <x>110</x>
+                <y>120</y>
+                <width>113</width>
+                <height>20</height>
+               </rect>
+              </property>
+             </widget>
+             <widget class="QLineEdit" name="caja_iteraciones">
+              <property name="geometry">
+               <rect>
+                <x>140</x>
+                <y>190</y>
+                <width>113</width>
+                <height>20</height>
+               </rect>
+              </property>
+             </widget>
+             <widget class="QLineEdit" name="caja_error">
+              <property name="geometry">
+               <rect>
+                <x>140</x>
+                <y>220</y>
+                <width>113</width>
+                <height>20</height>
+               </rect>
+              </property>
+             </widget>
+             <widget class="QLineEdit" name="caja_rata">
+              <property name="geometry">
+               <rect>
+                <x>150</x>
+                <y>250</y>
+                <width>113</width>
+                <height>20</height>
+               </rect>
+              </property>
+             </widget>
+             <widget class="QLabel" name="label_7">
+              <property name="geometry">
+               <rect>
+                <x>110</x>
+                <y>10</y>
+                <width>301</width>
+                <height>31</height>
+               </rect>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QLabel{
+font: 87 20pt &quot;Arial Black&quot;;
+background-color: #000000ff;
+color: rgb(255, 255, 255);
+border:Opx solid #14C8DC;
+
+}</string>
+              </property>
+              <property name="text">
+               <string>REDES NEURONAL </string>
+              </property>
+             </widget>
+            </widget>
+            <widget class="QWidget" name="page_entrenar">
+             <widget class="QPushButton" name="bt_entrenar_2">
+              <property name="geometry">
+               <rect>
+                <x>350</x>
+                <y>360</y>
+                <width>75</width>
+                <height>23</height>
+               </rect>
+              </property>
+              <property name="text">
+               <string>ENTRENAR</string>
+              </property>
+             </widget>
+             <widget class="QPushButton" name="bt_c_3">
+              <property name="geometry">
+               <rect>
+                <x>440</x>
+                <y>360</y>
+                <width>75</width>
+                <height>23</height>
+               </rect>
+              </property>
+              <property name="text">
+               <string>CANCELAR</string>
+              </property>
+             </widget>
+             <widget class="QLabel" name="label_8">
+              <property name="geometry">
+               <rect>
+                <x>0</x>
+                <y>330</y>
+                <width>101</width>
+                <height>16</height>
+               </rect>
+              </property>
+              <property name="text">
+               <string>ITERACIONES</string>
+              </property>
+             </widget>
+             <widget class="QLineEdit" name="line_iteracion_3">
+              <property name="geometry">
+               <rect>
+                <x>100</x>
+                <y>320</y>
+                <width>111</width>
+                <height>21</height>
+               </rect>
+              </property>
+             </widget>
+             <widget class="QLineEdit" name="line_error_3">
+              <property name="geometry">
+               <rect>
+                <x>370</x>
+                <y>320</y>
+                <width>141</width>
+                <height>21</height>
+               </rect>
+              </property>
+             </widget>
+             <widget class="QLabel" name="label_9">
+              <property name="geometry">
+               <rect>
+                <x>260</x>
+                <y>321</y>
+                <width>111</width>
+                <height>31</height>
+               </rect>
+              </property>
+              <property name="text">
+               <string>ERROR MAXIMO</string>
+              </property>
+             </widget>
+             <widget class="QWidget" name="horizontalLayoutWidget">
+              <property name="geometry">
+               <rect>
+                <x>20</x>
+                <y>60</y>
+                <width>491</width>
+                <height>241</height>
+               </rect>
+              </property>
+              <layout class="QHBoxLayout" name="grafica"/>
+             </widget>
+             <widget class="QPushButton" name="bt_exportar">
+              <property name="geometry">
+               <rect>
+                <x>174</x>
+                <y>360</y>
+                <width>161</width>
+                <height>23</height>
+               </rect>
+              </property>
+              <property name="text">
+               <string>EXPORTAR CONFIGURACION</string>
+              </property>
+             </widget>
+             <widget class="QLabel" name="label_11">
+              <property name="geometry">
+               <rect>
+                <x>130</x>
+                <y>10</y>
+                <width>271</width>
+                <height>31</height>
+               </rect>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QLabel{
+font: 87 20pt &quot;Arial Black&quot;;
+background-color: #000000ff;
+color: rgb(255, 255, 255);
+border:Opx solid #14C8DC;
+
+}</string>
+              </property>
+              <property name="text">
+               <string>ENTRENAMIENTO</string>
+              </property>
+             </widget>
+            </widget>
+            <widget class="QWidget" name="page_simular">
+             <widget class="QPushButton" name="bt_importar">
+              <property name="geometry">
+               <rect>
+                <x>10</x>
+                <y>350</y>
+                <width>101</width>
+                <height>23</height>
+               </rect>
+              </property>
+              <property name="text">
+               <string>IMPORTAR DATA</string>
+              </property>
+             </widget>
+             <widget class="QPushButton" name="bt_importar_2">
+              <property name="geometry">
+               <rect>
+                <x>130</x>
+                <y>350</y>
+                <width>171</width>
+                <height>23</height>
+               </rect>
+              </property>
+              <property name="text">
+               <string>IMPORTAR CONFIGURACIONES</string>
+              </property>
+             </widget>
+             <widget class="QPushButton" name="bt_simular_2">
+              <property name="geometry">
+               <rect>
+                <x>320</x>
+                <y>350</y>
+                <width>75</width>
+                <height>23</height>
+               </rect>
+              </property>
+              <property name="text">
+               <string>SIMULAR</string>
+              </property>
+             </widget>
+             <widget class="QLabel" name="label_10">
+              <property name="geometry">
+               <rect>
+                <x>190</x>
+                <y>10</y>
+                <width>141</width>
+                <height>31</height>
+               </rect>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QLabel{
+font: 87 20pt &quot;Arial Black&quot;;
+background-color: #000000ff;
+color: rgb(255, 255, 255);
+border:Opx solid #14C8DC;
+
+}</string>
+              </property>
+              <property name="text">
+               <string>SIMULAR</string>
+              </property>
+             </widget>
+             <widget class="QWidget" name="verticalLayoutWidget">
+              <property name="geometry">
+               <rect>
+                <x>20</x>
+                <y>70</y>
+                <width>491</width>
+                <height>221</height>
+               </rect>
+              </property>
+              <layout class="QVBoxLayout" name="grafica_2"/>
+             </widget>
+            </widget>
+            <widget class="QWidget" name="widget"/>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
